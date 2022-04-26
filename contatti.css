@@ -1,0 +1,179 @@
+html {
+    background-color: #131A22;
+    font-family: 'Hurricane', cursive, sans-serif;
+}
+
+article {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+#overlay {
+    position: absolute;
+    height: 112%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+button {
+    height: 60px;
+    width: 100px;
+    border: 0px;
+    border-top: 0.1px solid #131A22;
+    border-bottom: 0.1px solid #131A22;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input {
+    width: 405px;
+    border: 0px;
+    border-top: 0.1px solid #131A22;
+    border-bottom: 0.1px solid #131A22;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+    width: 405px;
+    height: 100px;
+    border: 0px;
+    border-top: 0.1px solid #131A22;
+    border-bottom: 0.1px solid #131A22;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+article input {
+    padding: 30px;
+}
+
+article div .Form-cont {
+    text-align: center;
+}
+
+.Form-cont {
+    padding: 10px;
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    background-color: #131A22;
+    border-bottom: 0.5px solid black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 2;
+    top: -1px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    background-image: url('background-contatti.jpg');
+    background-size: cover;
+    background-position: 65%;
+}
+
+.pulsanti {
+    border: 0.5px solid black;
+    border-radius: 100px;
+    padding: 3px 50px 3px 50px;
+    margin: 2px;
+    font-size: 70px;
+}
+
+.pulsanti a {
+    font-size: 75px;
+}
+
+a {
+    font-size: 30px;
+    height: 100%;
+    margin: 3px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    height: 270px;
+    background-color: #131A22;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+
+footer #footer-el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3%;
+    height: 100%;
+    background-color: #131A22;
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        position: absolute;
+    }
+    a {
+        font-size: 125%;
+    }
+    header {
+        height: 70%;
+    }
+    input {
+        width: 290px;
+    }
+    textarea {
+        width: 290px;
+    }
+    #overlay {
+        height: 100%;
+    }
+    footer {
+        height: 180px;
+    }
+    footer #footer-el {
+        font-size: 110%;
+        justify-content: flex-start;
+    }
+}

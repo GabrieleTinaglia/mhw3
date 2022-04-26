@@ -1,0 +1,265 @@
+  html {
+      background-color: #131A22;
+      font-family: 'Hurricane', cursive, sans-serif;
+  }
+  
+  nav {
+      position: fixed;
+      background-color: #131A22;
+      border-bottom: 0.5px solid black;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      z-index: 1;
+      top: -1px;
+  }
+  
+  header {
+      display: flex;
+      background-size: cover;
+      background-color: #495765;
+      border-bottom: 0.5px solid black;
+  }
+  
+  #sala {
+      height: 80vh;
+      width: 60%;
+      position: relative;
+      background-image: url(Sala.jpg);
+      background-size: cover;
+      background-position: center;
+  }
+  
+  #overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .3);
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+  }
+  
+  #logo {
+      transform: rotate(-23deg);
+      margin-bottom: 20px;
+  }
+  
+  .pulsanti {
+      border: 0.5px solid black;
+      border-radius: 100px;
+      padding: 3px 50px 3px 50px;
+      margin: 2px;
+      font-size: 70px;
+  }
+  
+  .pulsanti a {
+      font-size: 75px;
+  }
+  
+  a {
+      font-size: 30px;
+      height: 100%;
+      margin: 3px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+  
+  a:link {
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:visited {
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: white;
+      text-decoration: underline;
+  }
+  
+  a:active {
+      color: white;
+      text-decoration: underline;
+  }
+  
+  #chef {
+      text-align: center;
+      font-size: 25;
+      font-family: 'Shadows Into Light', cursive;
+  }
+  
+  header #chef {
+      color: aliceblue;
+  }
+  
+  article {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+  }
+  
+  #menu {
+      position: relative;
+      border-top: 0.5px solid black;
+      width: 100%;
+      height: 550px;
+      background-image: url("Cibo2.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .sezione {
+      display: flex;
+      border: 0.5px solid black;
+      width: 100%;
+      height: 400px;
+      background-color: #495765;
+  }
+  
+  #s1,
+  #s3 {
+      width: 60%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+  }
+  
+  #s1 {
+      background-image: url("cibo3.jpg");
+  }
+  
+  #s3 {
+      background-image: url("team.jpg");
+  }
+  
+  #s2,
+  #s4 {
+      border: 0.5px solid black;
+      width: 40%;
+      height: 100%;
+  }
+  
+  #s2 {
+      color: #495765;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      background-color: white;
+  }
+  
+  p {
+      text-align: center;
+      font-size: 45px;
+  }
+  
+  #s4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      color: aliceblue;
+  }
+  
+  #contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-image: url('background-contatt.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+  }
+  
+  #contact .pulsanti {
+      height: 100px;
+  }
+  
+  footer {
+      display: flex;
+      height: 270px;
+      background-color: #131A22;
+      border-top: 0.5px solid black;
+      border-bottom: 0.5px solid black;
+  }
+  
+  footer #footer-el {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 33.3%;
+      height: 100%;
+      background-color: #131A22;
+      color: white;
+      font-size: 30px;
+  }
+  
+  #order {
+      color: #495765;
+  }
+  
+  @media (max-width: 900px) {
+      nav {
+          position: absolute;
+      }
+      a {
+          font-size: 125%;
+      }
+      header {
+          height: 70%;
+      }
+      #sala {
+          background-position: 75%;
+      }
+      #logo img {
+          margin-top: 30%;
+          margin-left: 5%;
+          width: 70%;
+      }
+      #chef {
+          font-size: 120%;
+      }
+      .pulsanti {
+          font-size: 15px;
+          padding: 1.5px 25px 1.5px 25px;
+      }
+      .pulsanti a {
+          height: 30px;
+          font-size: 150%;
+          text-align: center;
+      }
+      #contact {
+          height: 300px;
+      }
+      #contact .pulsanti {
+          height: 30px;
+      }
+      footer {
+          height: 180px;
+      }
+      footer #footer-el {
+          font-size: 110%;
+          justify-content: flex-start;
+      }
+  }

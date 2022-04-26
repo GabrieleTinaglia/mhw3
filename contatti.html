@@ -1,0 +1,73 @@
+<htlm>
+
+    <head>
+        <title>Gab's Restaurant</title>
+        <link rel="stylesheet" type="text/css" href="contatti.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="jsContatti.js" defer="true">
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <nav>
+
+
+            <a href=""> Prenota</a>
+            <a href=""> Menù</a>
+            <a href="mhw1.html"> Home</a>
+            <a href=""> Ordina</a>
+            <a href="crew.html"> Crew</a>
+
+
+        </nav>
+        <div class="container">
+            <div id="overlay"> </div>
+            <article>
+
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="c79dc210-8732-4991-90b3-83a6a450730b">
+                    <input type="hidden" name="subject" value="Hai ricevuto una richiesta di contatto">
+                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+                    <input type="hidden" name="from_name" value="Form Contatto Gab's">
+                    <div class="Form-cont">Email:</div>
+                    <input type="email" name="email" required>
+                    <div class="Form-cont">Nome e Cognome:</div>
+                    <input type="text" name="name" required>
+                    <div class="Form-cont">Recapito Telefonico:</div>
+                    <input type="text" name="phone" required>
+                    <div class="Form-cont">Note:</div>
+                    <textarea name="message" required style="resize:none"></textarea>
+                    <br>
+                    <button type="submit">Invia</button>
+
+                    <div id="result"></div>
+
+                </form>
+
+            </article>
+        </div>
+
+        <footer>
+
+            <div id="footer-el">
+                <img src="orol.png" width="20%"> Orari <br> Lun-Ven 12-15/20-24 <br> Sab-Dom 19-01
+            </div>
+            <div id="footer-el">
+                <img src="address.png" width="20%"> Via Re Leonida 33, Roma <br> Alfonso Gabriele Tinaglia
+                <br> 100006087
+            </div>
+            <div id="footer-el">
+                <img src="ppl.webp.png" width="20%"> +39 3338889291 <br> Crew@Gabs.it <br>
+
+            </div>
+
+        </footer>
+    </body>
+</htlm>
